@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+    </head>
+    <body>
+        <!-- <marquee> -->
+        <table border="1" cellspacing="3" cellpadding="5" align="center">
+            <caption>BIO</caption>
+
+            <!-- Top Row -->
+             <marquee direction="right"> <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+             </tr>
+             <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+             </tr>
+             <tr>
+                <th>Begin</th>
+                <th>End</th>
+             </tr> </marquee>
+
+             <!-- Monday Row -->
+              <tr>
+                <th rowspan="2">Monday</th>
+                <td rowspan="2">8.00 am.</td>
+                <td rowspan="2">5.00 pm.</td>
+                <td>Introduction to HTML</td>
+              </tr>
+              <tr>
+                <td>Validity: DTD and Relax NG</td>
+              </tr>
+
+              <!-- Tuesday Row -->
+               <tr>
+                <th rowspan="3">Tuesday</th>
+                <td>8.00 am.</td>
+                <td>5.00 pm.</td>
+                <td rowspan="3">
+                    <table border="1" cellspacing="3" cellpadding="10" align="center" width="100%">
+                        <tr><td>XPath</td></tr>
+                        <tr><td>XSL Transformations</td></tr>
+                    </table>
+                </td>
+               </tr>
+               <tr>
+                <td>11.00 am.</td>
+                <td>02.00 pm.</td>
+               </tr>
+               <tr>
+                <td>02.00 pm.</td>
+                <td>05.00 pm.</td>
+               </tr>
+
+               <!-- Wednesday Row-->
+                <tr>
+                    <th>Wednesday</th>
+                    <td>8.00 am.</td>
+                    <td>12.00 pm.</td>
+                    <td>XSL Formattiong Objects</td>
+                </tr>
+        </table>
+        <!-- </marquee> -->
+    </body>
+</html>
