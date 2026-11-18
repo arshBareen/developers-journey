@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>KYC</legend>
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <div>
+                <label for="name">Name</label>
+                <input name="name" id="name" type="text" placeholder="User Name" required />
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input name="email" id="email" type="email" required>
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" min="1" max="100" step="5" />
+            </div>
+            <div>
+                <label for="date">D.O.B.</label>
+                <input type="date" name="date" id="date" min="1999-04-10" />
+            </div>
+            <div>
+                Favourite Fruit
+                <div>
+                    <label for="banana">Banana</label>
+                    <input type="checkbox" name="banana" id="banana" />
+
+                    <label for="apple">Apple</label>
+                    <input type="checkbox" name="apple" id="apple" />
+
+                    <label for="Kiwi">Kiwi</label>
+                    <input type="checkbox" name="Kiwi" id="Kiwi" />
+
+                    <label for="Orange">Orange</label>
+                    <input type="checkbox" name="Orange" id="Orange" />
+
+                    <label for="Grapes">Grapes</label>
+                    <input type="checkbox" name="Grapes" id="Grapes" />
+                </div>
+            </div>
+            <div>
+                Gender:&emsp;
+                <label for="Male">Male</label>
+                <input type="radio" name="gender" id="Male" value="male" />
+                <label for="Female">Female</label>
+                <input type="radio" name="gender" id="Female" value="female" />
+            </div>
+            <div>
+                <label for="eyeColour">Eye Colour</label>
+                <select name="eyeColour" id="eyeColour" multiple>
+                    <option value="green" label="Green"></option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="black">Black</option>
+                    <option value="brown">Brown</option>
+                </select>
+            </div>
+            <div>
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" rows="5" cols="40">About You...</textarea>
+            </div>
+            
+            <fieldset>
+                <legend>Other data:</legend>
+            <div>
+                <input type="hidden" name="hidden" value="HACKED" />
+            </div>
+            <div>
+                <label for="file">File</label>
+                <input type="file" id="file" name="file" />
+            </div>
+            <div>
+                <label for="mobile">Mobile No.</label>
+                <input type="tel" name="mobile" id="mobile">
+            </div>
+            <div>
+                <label for="url">Website</label>
+                <input type="url" name="url" id="url">
+            </div>
+            <div>
+                <label for="color">Fav. Color</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input name="password" id="password" type="password" value="Example@123" required />
+            </div>
+            <div>
+                <label for="review">Review this Form</label>
+                <input type="range" name="review" id="review" min="10" max="100" step="10" value="70">
+            </div>
+            <div>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+            </fieldset>
+        </form>
+    </fieldset>
+</body>
+
+</html>
